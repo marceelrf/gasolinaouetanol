@@ -25,6 +25,7 @@ server <- function(input, output, session) {
   })
   
   output$resultado <- renderText({
+    Sys.sleep(1) # force the system wait 1 sec
     resultado()
   })
 }
